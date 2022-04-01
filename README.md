@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setup 
+
+Run these below scripts respectively
+
+### `git clone https://github.com/EazzieJr/todo-app.git`
+
+To clone into the respository
+
+### `cd todo-app`
+
+To get into the cloned directory
+
+### `npm install`
+
+To install packages and dependencies.
+
 ## Available Scripts
 
 In the project directory, you can run:
