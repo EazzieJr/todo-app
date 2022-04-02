@@ -101,7 +101,13 @@ function Demo() {
           <Droppable droppableId="dnd-list" direction="vertical">
             {(provided) => (
               <ul {...provided.droppableProps} ref={provided.innerRef}>
-                {savedList}
+                {savedList.length === 0 ? (
+                  <Text align="center" color="#AAAAAA">
+                    Add a new list
+                  </Text>
+                ): (
+                  savedList
+                )}
                 {provided.placeholder}
               </ul>
             )}
