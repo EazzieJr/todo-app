@@ -70,7 +70,7 @@ function Demo() {
   };
 
   // A map function to render list items
-  const savedList = todos.map((todo, index) => (
+  const savedList = todos?.map((todo, index) => (
     <SavedList
       key={todo.id}
       text={todo.text}
@@ -101,13 +101,7 @@ function Demo() {
           <Droppable droppableId="dnd-list" direction="vertical">
             {(provided) => (
               <ul {...provided.droppableProps} ref={provided.innerRef}>
-                {savedList.length > 0 ? (
-                  savedList
-                ) : (
-                  <Text color="#AAAAAA" align="center">
-                    Add a task
-                  </Text>
-                )}
+                {savedList}
                 {provided.placeholder}
               </ul>
             )}
